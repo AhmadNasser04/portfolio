@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heroButton {
+        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest mt-5
+        text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
+    }
+
+    .contactInput {
+        @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]
+        text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F7AB0A;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(247, 171, 10, 0.4);
+}
+
+/* SELECTION COLOR FIREFOX */
+::-moz-selection {
+  color: white;
+  background: rgb(247, 171, 10, 0.4);
+}
+
+/* SELECTION COLOR */
+::selection {
+  color: white;
+  background: rgb(247, 171, 10, 0.4);
+}
