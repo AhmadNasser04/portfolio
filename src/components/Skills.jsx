@@ -41,14 +41,14 @@ export default function Skills() {
             <Skill directionLeft={true} logo={html} proficiency='Proficient' />
             <Skill directionLeft={true} logo={tailwind} proficiency='Proficient' />
             <Skill directionLeft={true} logo={vs} proficiency='Proficient' />
-            <Skill directionLeft={true} logo={angular} proficiency='Compotent' />
-            <Skill logo={ts} proficiency='Compotent' />
-            <Skill logo={mui} proficiency='Compotent' />
-            <Skill logo={next} proficiency='Compotent' />
-            <Skill logo={java} proficiency='Compotent' />
-            <Skill logo={mongo} proficiency='Compotent' />
-            <Skill logo={strapi} proficiency='Compotent' />
-            <Skill logo={firebase} proficiency='Compotent' />
+            <Skill directionLeft={true} logo={angular} proficiency='Competent' />
+            <Skill logo={ts} proficiency='Competent' />
+            <Skill logo={mui} proficiency='Competent' />
+            <Skill logo={next} proficiency='Competent' />
+            <Skill logo={java} proficiency='Competent' />
+            <Skill logo={mongo} proficiency='Competent' />
+            <Skill logo={strapi} proficiency='Competent' />
+            <Skill logo={firebase} proficiency='Competent' />
         </div>
     </motion.div>
   )
