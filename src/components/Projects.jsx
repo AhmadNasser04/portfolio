@@ -1,19 +1,31 @@
 import React from 'react'
 import tictactoe from '../resources/tictactoe.webp'
 import ecommer from '../resources/ecommer.webp'
+import speedtests from '../resources/speedtests.webp'
 import { motion } from 'framer-motion'
 
 export default function Projects() {
     const projects = [
         {
+            name: 'Speed Tests',
+            pic: speedtests,
+            time: '2 days',
+            description: 'Want to test your speed? Well you can do it here! What speed you ask? Well, any, from internet speed to cps speed we have it all',
+            link: 'https://speedtests.ahmadnasser.net/'
+        },
+        {
             name: 'TicTacToe',
             pic: tictactoe,
-            description: 'A fun tictactoe game with local multiplayer, the bot may also be unbeatable, you can test your luck with that one ;D'
+            time: '4 days',
+            description: 'A fun tictactoe game with local multiplayer, the bot may also be unbeatable, you can test your luck with that one ;D',
+            link: ''
         },
         {
             name: 'ECOMMER',
             pic: ecommer,
-            description: 'An amazing ecommer app made with React, Redux Toolkit, Strapi, and mui, with stripe integration'
+            time: '1 week',
+            description: 'An amazing ecommer app made with React, Redux Toolkit, Strapi, and mui, with stripe integration',
+            link: ''
         },
     ]
   return (
@@ -31,7 +43,22 @@ export default function Projects() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <img className='short:h-[150px] lg:h-[350px] short:lg:h-[165px] short:xl:h-[300px] w-auto' src={project.pic} alt='project' loading='lazy'/>
+                        <div className='group relative flex justify-center items-center'>
+                            <div className='absolute opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:bg-[#F7AB0A]/60 w-[100%] h-[100%] z-10 rounded-lg'>
+                                <h1 className='absolute bottom-5 left-5'>{project.time}</h1>
+                                <a href={project.link} target='_blank' rel='noreferrer'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 absolute bottom-5 right-5 cursor-pointer">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div className='group filter' >
+                                <img
+                                    className='group short:h-[150px] lg:h-[350px] short:lg:h-[165px] short:xl:h-[300px] w-auto rounded-lg group-hover:blur-[2px] z-[-1]' 
+                                    src={project.pic} alt='Team Member' loading='lazy'
+                                />
+                            </div>
+                        </div>
                     </motion.div>
                     <div className='space-y-10 px-0 md:px-10'>
                         <h1 className='text-4xl font-semibold text-center'>

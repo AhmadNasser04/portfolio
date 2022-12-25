@@ -34,21 +34,21 @@ export default function Skills() {
         <h1 className='absolute tracking-[3px] top-36 uppercase text-sm text-gray-500'>Hover over a skill for current proficiency</h1>
 
         <div className='grid grid-cols-4 gap-5 mt-28 short:mt-44'>
-            <Skill directionLeft={true} logo={Js} proficiency='Expert' />
-            <Skill directionLeft={true} logo={Python} proficiency='Expert' />
-            <Skill directionLeft={true} logo={reactLogo} proficiency='Expert' />
-            <Skill directionLeft={true} logo={css} proficiency='Expert' />
-            <Skill directionLeft={true} logo={html} proficiency='Expert' />
-            <Skill directionLeft={true} logo={tailwind} proficiency='Expert' />
-            <Skill directionLeft={true} logo={vs} proficiency='Expert' />
-            <Skill directionLeft={true} logo={angular} proficiency='Proficient' />
-            <Skill logo={ts} proficiency='Proficient' />
-            <Skill logo={mui} proficiency='Proficient' />
-            <Skill logo={next} proficiency='Proficient' />
-            <Skill logo={java} proficiency='Proficient' />
-            <Skill logo={mongo} proficiency='Proficient' />
-            <Skill logo={strapi} proficiency='Proficient' />
-            <Skill logo={firebase} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={Js} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={Python} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={reactLogo} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={css} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={html} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={tailwind} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={vs} proficiency='Proficient' />
+            <Skill directionLeft={true} logo={angular} proficiency='Compotent' />
+            <Skill logo={ts} proficiency='Compotent' />
+            <Skill logo={mui} proficiency='Compotent' />
+            <Skill logo={next} proficiency='Compotent' />
+            <Skill logo={java} proficiency='Compotent' />
+            <Skill logo={mongo} proficiency='Compotent' />
+            <Skill logo={strapi} proficiency='Compotent' />
+            <Skill logo={firebase} proficiency='Compotent' />
         </div>
     </motion.div>
   )
