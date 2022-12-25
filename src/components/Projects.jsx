@@ -36,15 +36,15 @@ export default function Projects() {
                             </div>
                         </div>
                     </motion.div>
+                    {/* Skills */}
+                    <div className='flex justify-center items-center gap-2 short:hidden'>
+                        {project.technologies.map((technology, index) => (
+                            <Tooltip title={technology[0]} key={index}>
+                                <img src={technology[1]} alt='used' className='rounded-full w-12 h-12 md:w-16 md:h-16 object-cover border' />
+                            </Tooltip>
+                        ))}
+                    </div>
                     <div className='space-y-10 px-0 md:px-10'>
-                        {/* Skills */}
-                        <div className='flex justify-center items-center gap-2'>
-                            {project.technologies.map((technology, index) => (
-                                <Tooltip title={technology[0]} key={index}>
-                                    <img src={technology[1]} alt='used' className='rounded-full w-16 h-16 object-cover border' />
-                                </Tooltip>
-                            ))}
-                        </div>
                         <h1 className='text-4xl font-semibold text-center'>
                             <span className='underline decoration-[#F7AB0A]/50'>Project {index + 1} of {projects.length}:</span> {project.name}
                         </h1>
