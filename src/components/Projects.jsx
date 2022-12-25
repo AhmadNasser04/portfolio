@@ -1,41 +1,9 @@
 import React from 'react'
-import tictactoe from '../resources/tictactoe.webp'
-import ecommer from '../resources/ecommer.webp'
-import speedtests from '../resources/speedtests.webp'
-import quizmaster from '../resources/quizmaster.webp'
 import { motion } from 'framer-motion'
+import { Tooltip } from '@mui/material'
+import { projects } from './ProjectsData.js'
 
 export default function Projects() {
-    const projects = [
-        {
-            name: 'Speed Tests',
-            pic: speedtests,
-            time: '2 days',
-            description: 'Want to test your speed? Well you can do it here! What speed you ask? Well, any, from internet speed to cps speed we have it all',
-            link: 'https://speedtests.ahmadnasser.net/'
-        },
-        {
-            name: 'Quiz Master',
-            pic: quizmaster,
-            time: '1 day',
-            description: 'A fun little website to do quizzes, new quizzes can be added easily!',
-            link: 'https://quizmaster.ahmadnasser.net/'
-        },
-        {
-            name: 'TicTacToe',
-            pic: tictactoe,
-            time: '4 days',
-            description: 'A fun tictactoe game with local multiplayer, the bot may also be unbeatable, you can test your luck with that one ;D',
-            link: ''
-        },
-        {
-            name: 'ECOMMER',
-            pic: ecommer,
-            time: '1 week',
-            description: 'An amazing ecommer app made with React, Redux Toolkit, Strapi, and mui, with stripe integration',
-            link: ''
-        },
-    ]
   return (
     <motion.div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
         <h1 className='absolute select-none top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
@@ -69,6 +37,14 @@ export default function Projects() {
                         </div>
                     </motion.div>
                     <div className='space-y-10 px-0 md:px-10'>
+                        {/* Skills */}
+                        <div className='flex justify-center items-center gap-2'>
+                            {project.technologies.map((technology, index) => (
+                                <Tooltip title={technology[0]} key={index}>
+                                    <img src={technology[1]} alt='used' className='rounded-full w-16 h-16 object-cover border' />
+                                </Tooltip>
+                            ))}
+                        </div>
                         <h1 className='text-4xl font-semibold text-center'>
                             <span className='underline decoration-[#F7AB0A]/50'>Project {index + 1} of {projects.length}:</span> {project.name}
                         </h1>
