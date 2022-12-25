@@ -5,7 +5,7 @@ import myPhoto from '../resources/me.webp'
 
 export default function Hero() {
     const [text] = useTypewriter({
-        words: ["Hi, I'm Ahmad Nasser", "Guy-who-loves-gaming.tsx", "<ButLovesToCodeMore />"],
+        words: ["Hi, I'm Ahmad Nasser", 'Self Tought', 'Computer Science Student', "Guy-who-loves-gaming.tsx", "<ButLovesToCodeMore />"],
         loop: true,
         delaySpeed: 2000,
     })
