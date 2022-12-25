@@ -2,6 +2,7 @@ import React from 'react'
 import tictactoe from '../resources/tictactoe.webp'
 import ecommer from '../resources/ecommer.webp'
 import speedtests from '../resources/speedtests.webp'
+import quizmaster from '../resources/quizmaster.webp'
 import { motion } from 'framer-motion'
 
 export default function Projects() {
@@ -12,6 +13,13 @@ export default function Projects() {
             time: '2 days',
             description: 'Want to test your speed? Well you can do it here! What speed you ask? Well, any, from internet speed to cps speed we have it all',
             link: 'https://speedtests.ahmadnasser.net/'
+        },
+        {
+            name: 'Quiz Master',
+            pic: quizmaster,
+            time: '1 day',
+            description: 'A fun little website to do quizzes, new quizzes can be added easily!',
+            link: 'https://quizmaster.ahmadnasser.net/'
         },
         {
             name: 'TicTacToe',
