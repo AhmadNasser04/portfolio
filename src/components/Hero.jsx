@@ -5,7 +5,7 @@ import myPhoto from '../resources/me.webp'
 
 export default function Hero() {
     const [text] = useTypewriter({
-        words: ["Hi, I'm Ahmad Nasser", 'Self Tought', 'Computer Science Student', "Guy-who-loves-gaming.tsx", "<ButLovesToCodeMore />"],
+        words: ["Hi, I'm Ahmad Nasser", 'SelfTought.js', "Guy-who-loves-gaming.tsx", "<ButLovesToCodeMore />"],
         loop: true,
         delaySpeed: 2000,
     })
@@ -27,7 +27,7 @@ export default function Hero() {
                 <Cursor cursorColor='#F7ABBA' />
             </h1>
 
-            <div>
+            <div className='space-x-2'>
                 <a href='#about'><button className='heroButton'>About</button></a>
                 <a href='#skills'><button className='heroButton'>Skills</button></a>
                 <a href='#projects'><button className='heroButton'>Projects</button></a>

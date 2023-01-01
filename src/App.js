@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import About from './components/About'
 import ContactMe from './components/ContactMe'
 import Hero from './components/Hero'
@@ -6,9 +7,16 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 
 function App() {
+  
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
   return (
-    <div className='bg-[rgb(36,36,36)] scroll-smooth text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
-      <Navbar />
+    <div className={`${darkMode ? 'bg-[#F1F1F1] text-[rgb(36,36,36)]' : 'bg-[rgb(36,36,36)] text-white'} scroll-smooth h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 transition-all duration-500`}>
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
       <section id='hero' className='snap-center'>
         <Hero />

@@ -25,7 +25,7 @@ export default function ContactMe() {
 
         <div className='flex flex-col short:space-y-2 space-y-10'>
             <h1 className='short:text-2xl text-4xl short:mt-5 font-semibold text-center'>
-                I have got just what you need.{" "}
+                I've got just what you need.{" "}
                 <span className='decoration-[#F7AB0A]/50 underline'>Lets Talk.</span>
             </h1>
 

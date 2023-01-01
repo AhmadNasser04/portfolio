@@ -1,8 +1,11 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { IconButton } from '@mui/material';
 
-export default function Navbar() {
+export default function Navbar({ darkMode, toggleDarkMode }) {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div 
@@ -11,6 +14,9 @@ export default function Navbar() {
             transition={{ duration: 1.5 }}
             className='flex flex-row items-center'
         >
+            <IconButton onClick={toggleDarkMode} aria-label='toggle darkmode'>
+                {darkMode ? <DarkModeIcon className='text-[#F7AB0A]' /> : <LightModeIcon className='text-[#F7AB0A]' />}
+            </IconButton>
             <SocialIcon url='https://github.com/AhmadNasser04' fgColor='gray' bgColor='transparent' />
             <SocialIcon url='https://www.linkedin.com/in/ahmad-nasser-034222223/' fgColor='gray' bgColor='transparent' />
         </motion.div>
