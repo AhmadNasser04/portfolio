@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Tooltip } from '@mui/material'
 import { projects } from './ProjectsData.js'
+import LaunchIcon from '@mui/icons-material/Launch';
 
 export default function Projects() {
   return (
@@ -23,9 +24,7 @@ export default function Projects() {
                             <div className='absolute opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:bg-[#F7AB0A]/60 w-[100%] h-[100%] z-10 rounded-lg'>
                                 <h1 className='absolute bottom-5 left-5'>{project.time}</h1>
                                 <a href={project.link} target='_blank' rel='noreferrer' aria-label='go to project'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 absolute bottom-5 right-5 cursor-pointer">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                                    </svg>
+                                    <LaunchIcon fontSize='medium' className='absolute bottom-5 right-5 cursor-pointer' />
                                 </a>
                             </div>
                             <div className='group filter' >

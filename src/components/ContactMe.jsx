@@ -1,7 +1,8 @@
 import React from 'react'
-import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import LoadingButton from "@mui/lab/LoadingButton";
 import CircularProgress from '@mui/material/CircularProgress';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from 'emailjs-com';
 
@@ -31,11 +32,11 @@ export default function ContactMe() {
 
             <div className='space-y-10'>
                 <div className='flex items-center short:mb-5 space-x-5 justify-center'>
-                    <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                    <PhoneIcon fontSize='large' className='text-[#F7AB0A] animate-pulse'/>
                     <p className='text-2xl'>+961 81 726 783</p>
                 </div>
                 <div className='flex items-center short:hidden space-x-5 justify-center'>
-                    <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                    <EmailIcon fontSize='large' className='text-[#F7AB0A] animate-pulse'/>
                     <p className='text-2xl'>ahmad_nasser04@outlook.com</p>
                 </div>
             </div>
