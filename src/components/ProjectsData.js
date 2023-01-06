@@ -46,7 +46,7 @@ export const projects = [
       ["Tailwindcss", tailwind],
       ["Firebase", firebase],
     ],
-    link: "",
+    link: "https://ahmadnasser.net/",
   },
   {
     name: "ECOMMER",
@@ -60,6 +60,6 @@ export const projects = [
       ["Tailwindcss", tailwind],
       ["Firebase", firebase],
     ],
-    link: "",
+    link: "https://ahmadnasser.net/",
   },
 ];
